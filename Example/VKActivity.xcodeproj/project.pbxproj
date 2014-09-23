@@ -22,11 +22,9 @@
 		35F504B719D165D800A295DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F5049619D165D800A295DC /* UIKit.framework */; };
 		35F504BF19D165D800A295DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35F504BD19D165D800A295DC /* InfoPlist.strings */; };
 		35F504C119D165D800A295DC /* VKActivityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F504C019D165D800A295DC /* VKActivityTests.m */; };
-		35F504E419D1744300A295DC /* VKActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F504E319D1744300A295DC /* VKActivity.m */; };
 		35F504E619D174E800A295DC /* example.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 35F504E519D174E800A295DC /* example.jpg */; };
-		35F504E919D1783E00A295DC /* vk_activity.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F504E719D1783E00A295DC /* vk_activity.png */; };
-		35F504EA19D1783E00A295DC /* vk_activity@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F504E819D1783E00A295DC /* vk_activity@2x.png */; };
 		9DFD57FFEBA44D1FBEB4FDAD /* libPods-VKActivity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B59DF16EBF2E483DB9DAD971 /* libPods-VKActivity.a */; };
+		BBC1282878CF4FC2B2BBA930 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D80D3EA4FF4DA68DDCE48D /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,12 +58,10 @@
 		35F504BC19D165D800A295DC /* VKActivityTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VKActivityTests-Info.plist"; sourceTree = "<group>"; };
 		35F504BE19D165D800A295DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		35F504C019D165D800A295DC /* VKActivityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKActivityTests.m; sourceTree = "<group>"; };
-		35F504E219D1744300A295DC /* VKActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKActivity.h; sourceTree = "<group>"; };
-		35F504E319D1744300A295DC /* VKActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKActivity.m; sourceTree = "<group>"; };
 		35F504E519D174E800A295DC /* example.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = example.jpg; sourceTree = "<group>"; };
-		35F504E719D1783E00A295DC /* vk_activity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vk_activity.png; sourceTree = "<group>"; };
-		35F504E819D1783E00A295DC /* vk_activity@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vk_activity@2x.png"; sourceTree = "<group>"; };
+		9C672D1341A94D30A950370D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		B59DF16EBF2E483DB9DAD971 /* libPods-VKActivity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VKActivity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4D80D3EA4FF4DA68DDCE48D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7081571604B49188FD96F9F /* Pods-VKActivity.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKActivity.xcconfig"; path = "Pods/Pods-VKActivity.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +74,7 @@
 				35F5049719D165D800A295DC /* UIKit.framework in Frameworks */,
 				35F5049319D165D800A295DC /* Foundation.framework in Frameworks */,
 				9DFD57FFEBA44D1FBEB4FDAD /* libPods-VKActivity.a in Frameworks */,
+				BBC1282878CF4FC2B2BBA930 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +99,7 @@
 				35F5049119D165D800A295DC /* Frameworks */,
 				35F5049019D165D800A295DC /* Products */,
 				F7081571604B49188FD96F9F /* Pods-VKActivity.xcconfig */,
+				9C672D1341A94D30A950370D /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +120,7 @@
 				35F5049619D165D800A295DC /* UIKit.framework */,
 				35F504B419D165D800A295DC /* XCTest.framework */,
 				B59DF16EBF2E483DB9DAD971 /* libPods-VKActivity.a */,
+				F4D80D3EA4FF4DA68DDCE48D /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				35F504E519D174E800A295DC /* example.jpg */,
-				35F504E119D1744300A295DC /* VKActivity */,
 				35F504A119D165D800A295DC /* STAppDelegate.h */,
 				35F504A219D165D800A295DC /* STAppDelegate.m */,
 				35F504A419D165D800A295DC /* Main_iPhone.storyboard */,
@@ -170,18 +168,6 @@
 				35F504BD19D165D800A295DC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		35F504E119D1744300A295DC /* VKActivity */ = {
-			isa = PBXGroup;
-			children = (
-				35F504E719D1783E00A295DC /* vk_activity.png */,
-				35F504E819D1783E00A295DC /* vk_activity@2x.png */,
-				35F504E219D1744300A295DC /* VKActivity.h */,
-				35F504E319D1744300A295DC /* VKActivity.m */,
-			);
-			name = VKActivity;
-			path = ../../VKActivity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35F504EA19D1783E00A295DC /* vk_activity@2x.png in Resources */,
 				35F504A919D165D800A295DC /* Main_iPad.storyboard in Resources */,
-				35F504E919D1783E00A295DC /* vk_activity.png in Resources */,
 				35F504E619D174E800A295DC /* example.jpg in Resources */,
 				35F504AE19D165D800A295DC /* Images.xcassets in Resources */,
 				35F504A619D165D800A295DC /* Main_iPhone.storyboard in Resources */,
@@ -311,7 +295,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-VKActivity-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -323,7 +307,6 @@
 			files = (
 				35F504AC19D165D800A295DC /* STViewController.m in Sources */,
 				35F5049F19D165D800A295DC /* main.m in Sources */,
-				35F504E419D1744300A295DC /* VKActivity.m in Sources */,
 				35F504A319D165D800A295DC /* STAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,7 +439,7 @@
 		};
 		35F504C519D165D800A295DC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7081571604B49188FD96F9F /* Pods-VKActivity.xcconfig */;
+			baseConfigurationReference = 9C672D1341A94D30A950370D /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -471,7 +454,7 @@
 		};
 		35F504C619D165D800A295DC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7081571604B49188FD96F9F /* Pods-VKActivity.xcconfig */;
+			baseConfigurationReference = 9C672D1341A94D30A950370D /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

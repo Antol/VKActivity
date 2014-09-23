@@ -1,0 +1,23 @@
+PODS:
+  - MBProgressHUD (0.9)
+  - REComposeViewController (2.3.2)
+  - VK-ios-sdk (1.0.8.3)
+  - VKActivity (1.0.0):
+    - MBProgressHUD
+    - REComposeViewController
+    - VK-ios-sdk
+
+DEPENDENCIES:
+  - VKActivity (from `../`)
+
+EXTERNAL SOURCES:
+  VKActivity:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
+  REComposeViewController: ecdf1f4799a69c029258c56aca130276e7975f74
+  VK-ios-sdk: 4f4b0f004e2ebbaa509b9c92c89cced4744c0e71
+  VKActivity: 5f43e4b028ee916573984e6d386b50f8575398ee
+
+COCOAPODS: 0.33.1
