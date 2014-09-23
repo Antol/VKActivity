@@ -1,0 +1,16 @@
+PODS:
+  - MBProgressHUD (0.9)
+  - REComposeViewController (2.3.2)
+  - VK-ios-sdk (1.0.8.3)
+
+DEPENDENCIES:
+  - MBProgressHUD (~> 0.8)
+  - REComposeViewController (~> 2.3.2)
+  - VK-ios-sdk
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
+  REComposeViewController: ecdf1f4799a69c029258c56aca130276e7975f74
+  VK-ios-sdk: 4f4b0f004e2ebbaa509b9c92c89cced4744c0e71
+
+COCOAPODS: 0.33.1
