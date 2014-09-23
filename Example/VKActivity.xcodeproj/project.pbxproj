@@ -23,7 +23,6 @@
 		35F504BF19D165D800A295DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35F504BD19D165D800A295DC /* InfoPlist.strings */; };
 		35F504C119D165D800A295DC /* VKActivityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F504C019D165D800A295DC /* VKActivityTests.m */; };
 		35F504E619D174E800A295DC /* example.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 35F504E519D174E800A295DC /* example.jpg */; };
-		9DFD57FFEBA44D1FBEB4FDAD /* libPods-VKActivity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B59DF16EBF2E483DB9DAD971 /* libPods-VKActivity.a */; };
 		BBC1282878CF4FC2B2BBA930 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D80D3EA4FF4DA68DDCE48D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +59,6 @@
 		35F504C019D165D800A295DC /* VKActivityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKActivityTests.m; sourceTree = "<group>"; };
 		35F504E519D174E800A295DC /* example.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = example.jpg; sourceTree = "<group>"; };
 		9C672D1341A94D30A950370D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		B59DF16EBF2E483DB9DAD971 /* libPods-VKActivity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VKActivity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D80D3EA4FF4DA68DDCE48D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7081571604B49188FD96F9F /* Pods-VKActivity.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKActivity.xcconfig"; path = "Pods/Pods-VKActivity.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,7 +71,6 @@
 				35F5049519D165D800A295DC /* CoreGraphics.framework in Frameworks */,
 				35F5049719D165D800A295DC /* UIKit.framework in Frameworks */,
 				35F5049319D165D800A295DC /* Foundation.framework in Frameworks */,
-				9DFD57FFEBA44D1FBEB4FDAD /* libPods-VKActivity.a in Frameworks */,
 				BBC1282878CF4FC2B2BBA930 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,7 +116,6 @@
 				35F5049419D165D800A295DC /* CoreGraphics.framework */,
 				35F5049619D165D800A295DC /* UIKit.framework */,
 				35F504B419D165D800A295DC /* XCTest.framework */,
-				B59DF16EBF2E483DB9DAD971 /* libPods-VKActivity.a */,
 				F4D80D3EA4FF4DA68DDCE48D /* libPods.a */,
 			);
 			name = Frameworks;

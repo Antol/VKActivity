@@ -8,11 +8,11 @@ PODS:
     - VK-ios-sdk
 
 DEPENDENCIES:
-  - VKActivity (from `../`)
+  - VKActivity (from `https://github.com/Antol/VKActivity.git`)
 
 EXTERNAL SOURCES:
   VKActivity:
-    :path: ../
+    :git: https://github.com/Antol/VKActivity.git
 
 SPEC CHECKSUMS:
   MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
