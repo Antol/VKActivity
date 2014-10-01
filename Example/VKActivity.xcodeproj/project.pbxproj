@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3500FC4C19DCC11A004B2597 /* vk_activity.png in Resources */ = {isa = PBXBuildFile; fileRef = 3500FC4819DCC11A004B2597 /* vk_activity.png */; };
+		3500FC4D19DCC11A004B2597 /* vk_activity@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3500FC4919DCC11A004B2597 /* vk_activity@2x.png */; };
+		3500FC4E19DCC11A004B2597 /* VKActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3500FC4B19DCC11A004B2597 /* VKActivity.m */; };
 		35F5049319D165D800A295DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F5049219D165D800A295DC /* Foundation.framework */; };
 		35F5049519D165D800A295DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F5049419D165D800A295DC /* CoreGraphics.framework */; };
 		35F5049719D165D800A295DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F5049619D165D800A295DC /* UIKit.framework */; };
@@ -37,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3500FC4819DCC11A004B2597 /* vk_activity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vk_activity.png; sourceTree = "<group>"; };
+		3500FC4919DCC11A004B2597 /* vk_activity@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vk_activity@2x.png"; sourceTree = "<group>"; };
+		3500FC4A19DCC11A004B2597 /* VKActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKActivity.h; sourceTree = "<group>"; };
+		3500FC4B19DCC11A004B2597 /* VKActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKActivity.m; sourceTree = "<group>"; };
 		35F5048F19D165D800A295DC /* VKActivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKActivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35F5049219D165D800A295DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		35F5049419D165D800A295DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -88,6 +95,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3500FC4719DCC11A004B2597 /* VKActivity */ = {
+			isa = PBXGroup;
+			children = (
+				3500FC4819DCC11A004B2597 /* vk_activity.png */,
+				3500FC4919DCC11A004B2597 /* vk_activity@2x.png */,
+				3500FC4A19DCC11A004B2597 /* VKActivity.h */,
+				3500FC4B19DCC11A004B2597 /* VKActivity.m */,
+			);
+			name = VKActivity;
+			path = ../../VKActivity;
+			sourceTree = "<group>";
+		};
 		35F5048619D165D800A295DC = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +143,7 @@
 		35F5049819D165D800A295DC /* VKActivity */ = {
 			isa = PBXGroup;
 			children = (
+				3500FC4719DCC11A004B2597 /* VKActivity */,
 				35F504E519D174E800A295DC /* example.jpg */,
 				35F504A119D165D800A295DC /* STAppDelegate.h */,
 				35F504A219D165D800A295DC /* STAppDelegate.m */,
@@ -245,7 +265,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3500FC4D19DCC11A004B2597 /* vk_activity@2x.png in Resources */,
 				35F504A919D165D800A295DC /* Main_iPad.storyboard in Resources */,
+				3500FC4C19DCC11A004B2597 /* vk_activity.png in Resources */,
 				35F504E619D174E800A295DC /* example.jpg in Resources */,
 				35F504AE19D165D800A295DC /* Images.xcassets in Resources */,
 				35F504A619D165D800A295DC /* Main_iPhone.storyboard in Resources */,
@@ -302,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35F504AC19D165D800A295DC /* STViewController.m in Sources */,
+				3500FC4E19DCC11A004B2597 /* VKActivity.m in Sources */,
 				35F5049F19D165D800A295DC /* main.m in Sources */,
 				35F504A319D165D800A295DC /* STAppDelegate.m in Sources */,
 			);

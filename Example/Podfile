@@ -1,1 +1,1 @@
-pod 'VKActivity', :git => 'https://github.com/Antol/VKActivity.git'
+pod 'VKActivity', :path => '../'
