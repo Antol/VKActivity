@@ -14,5 +14,4 @@ Pod::Spec.new do |s|
 
   s.dependency 'VK-ios-sdk'
   s.dependency 'REComposeViewController'
-  s.dependency 'MBProgressHUD'
 end

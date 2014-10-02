@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface VKActivity : UIActivity
-
-- (id)initWithParent:(UIViewController*)parent;
+@property (nonatomic, strong) UIImage *image;
+@property (nonatomic, strong) NSString *string;
+@property (nonatomic, strong) NSURL *URL;
 
 @end

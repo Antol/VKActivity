@@ -19,7 +19,7 @@
     NSString *string = @"Чебуреки?";
     NSURL *url = [NSURL URLWithString:@"http://gotovim-doma.ru/view.php?r=512-recept-CHebureki-domashnie"];
     
-    VKActivity *vkActivity = [[VKActivity alloc] initWithParent:self];
+    VKActivity *vkActivity = [VKActivity new];
     
     UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[image, string, url]
                                                                                          applicationActivities:@[vkActivity]];
