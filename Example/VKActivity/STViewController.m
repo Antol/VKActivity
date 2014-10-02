@@ -9,9 +9,11 @@
 #import "STViewController.h"
 #import "VKActivity.h"
 
-@implementation STViewController
+@implementation STViewController {
+    UIPopoverController *_popover;
+}
 
-- (IBAction)share:(id)sender
+- (IBAction)share:(UIButton *)sender
 {
     UIImage *image = [UIImage imageNamed:@"example.jpg"];
     NSString *string = @"Чебуреки?";
@@ -22,7 +24,13 @@
     UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[image, string, url]
                                                                                          applicationActivities:@[vkActivity]];
     
-    [self presentViewController:activityViewController animated:YES completion:nil];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        _popover = [[UIPopoverController alloc] initWithContentViewController:activityViewController];
+        [_popover presentPopoverFromRect:sender.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+    }
+    else {
+        [self presentViewController:activityViewController animated:YES completion:nil];
+    }
 }
 
 @end
