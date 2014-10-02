@@ -17,11 +17,11 @@
 
 @implementation VKViewController
 
-//- (void)viewDidLoad
-//{
-//    [super viewDidLoad];
-//    self.view.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.3f];
-//}
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.view.backgroundColor = [UIColor colorWithRed:0.236 green:0.378 blue:0.572 alpha:0.2f];
+}
 
 - (void)viewDidAppear:(BOOL)animated
 {
@@ -44,7 +44,7 @@
         [self startComposeViewController];
     }
     else {
-        [VKSdk authorize:@[VK_PER_WALL, VK_PER_PHOTOS] revokeAccess:NO forceOAuth:NO inApp:NO];
+        [VKSdk authorize:@[VK_PER_WALL, VK_PER_PHOTOS]];
     }
 }
 
@@ -64,7 +64,7 @@
 
 - (void)vkSdkTokenHasExpired:(VKAccessToken *)expiredToken
 {
-    [VKSdk authorize:@[VK_PER_WALL, VK_PER_PHOTOS] revokeAccess:NO forceOAuth:NO inApp:NO];
+    [VKSdk authorize:@[VK_PER_WALL, VK_PER_PHOTOS]];
 }
 
 - (void)vkSdkReceivedNewToken:(VKAccessToken *)newToken

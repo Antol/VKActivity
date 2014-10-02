@@ -73,6 +73,9 @@
 {
     VKViewController *vc = [VKViewController new];
     vc.vkActivity = self;
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.f) {
+        vc.modalPresentationStyle = UIModalPresentationOverFullScreen;
+    }
     return vc;
 }
 
