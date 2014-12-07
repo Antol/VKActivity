@@ -148,10 +148,18 @@
     [request executeWithResultBlock: ^(VKResponse *response) {
         VKPhoto *photoInfo = [(VKPhotoArray*)response.parsedModel objectAtIndex:0];
         NSString *photoAttachment = [NSString stringWithFormat:@"photo%@_%@", photoInfo.owner_id, photoInfo.id];
-        [self postToWall:@{ VK_API_ATTACHMENTS : [@[photoAttachment, [self.vkActivity.URL absoluteString]] componentsJoinedByString:@","],
-                            VK_API_FRIENDS_ONLY : @(0),
-                            VK_API_OWNER_ID : userId,
-                            VK_API_MESSAGE : self.vkActivity.string}];
+        
+        NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{
+                                                                                      VK_API_FRIENDS_ONLY : @(0),
+                                                                                      VK_API_OWNER_ID : userId,
+                                                                                      VK_API_MESSAGE : self.vkActivity.string}];
+        if (self.vkActivity.URL) {
+            [params setObject:[@[photoAttachment, [self.vkActivity.URL absoluteString]] componentsJoinedByString:@","] forKey:VK_API_ATTACHMENTS];
+        }
+        else {
+            [params setObject:photoAttachment forKey:VK_API_ATTACHMENTS];
+        }
+        [self postToWall:params];
     } errorBlock: ^(NSError *error) {
         NSLog(@"Error: %@", error);
         [self shareDidFinish:NO];
@@ -160,10 +168,14 @@
 
 - (void)uploadText
 {
-    [self postToWall:@{ VK_API_ATTACHMENTS : [self.vkActivity.URL absoluteString],
-                        VK_API_FRIENDS_ONLY : @(0),
-                        VK_API_OWNER_ID : [VKSdk getAccessToken].userId,
-                        VK_API_MESSAGE : self.vkActivity.string}];
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{
+                                                                                  VK_API_FRIENDS_ONLY : @(0),
+                                                                                  VK_API_OWNER_ID : [VKSdk getAccessToken].userId,
+                                                                                  VK_API_MESSAGE : self.vkActivity.string}];
+    if (self.vkActivity.URL) {
+        [params setObject:[self.vkActivity.URL absoluteString] forKey:VK_API_ATTACHMENTS];
+    }
+    [self postToWall:params];
 }
 
 - (void)postToWall:(NSDictionary *)params
